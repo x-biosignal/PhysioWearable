@@ -1,0 +1,20 @@
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/404.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/CONTRIBUTING.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/LICENSE-text.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/authors.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/index.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/news/index.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/reference/PhysioWearable-package.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/reference/accelToPhysioExperiment.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/reference/autoCalibrateAccel.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/reference/classifyBouts.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/reference/computeENMO.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/reference/detectNonWear.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/reference/detectSteps.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/reference/index.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/reference/paIntensityThresholds.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/reference/readAccelCSV.html</loc></url>
+</urlset>
+
