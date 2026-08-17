@@ -1,5 +1,13 @@
 # Changelog
 
+## PhysioWearable 0.4.1
+
+- [`adlToICF()`](https://x-biosignal.github.io/PhysioWearable/reference/adlToICF.md)
+  now maps the remaining self-care activities (washing -\> d510,
+  toileting -\> d530, grooming -\> d520), so the HAR pipeline is
+  ICF-mapping-ready for all d5 self-care given task-specific training
+  data.
+
 ## PhysioWearable 0.4.0
 
 Real-world upper-limb use (self-care performance).
