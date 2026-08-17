@@ -1,5 +1,16 @@
 # Changelog
 
+## PhysioWearable 0.4.0
+
+Real-world upper-limb use (self-care performance).
+
+- [`upperLimbUse()`](https://x-biosignal.github.io/PhysioWearable/reference/upperLimbUse.md):
+  field-standard free-living arm-use metrics from bilateral wrist
+  accelerometry – Use Ratio, Magnitude Ratio, Bilateral Magnitude, hours
+  of use per arm and a laterality index – the sensor (performance)
+  counterpart to a clinic upper-limb capacity test, mapping to ICF d445
+  (hand and arm use), the substrate of the d5 self-care activities.
+
 ## PhysioWearable 0.3.0
 
 Sensor-based ADL activity recognition (HAR).

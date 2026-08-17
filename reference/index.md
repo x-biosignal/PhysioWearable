@@ -42,3 +42,5 @@
 - [`trainADL()`](https://x-biosignal.github.io/PhysioWearable/reference/trainADL.md)
   [`predict(`*`<adl_model>`*`)`](https://x-biosignal.github.io/PhysioWearable/reference/trainADL.md)
   : Train an ADL activity recogniser from labelled windows
+- [`upperLimbUse()`](https://x-biosignal.github.io/PhysioWearable/reference/upperLimbUse.md)
+  : Real-world upper-limb use from bilateral wrist accelerometry
