@@ -8,13 +8,19 @@
 <url><loc>https://x-biosignal.github.io/PhysioWearable/news/index.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioWearable/reference/PhysioWearable-package.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioWearable/reference/accelToPhysioExperiment.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/reference/activityFragmentation.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioWearable/reference/autoCalibrateAccel.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioWearable/reference/classifyBouts.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioWearable/reference/computeENMO.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioWearable/reference/detectNonWear.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioWearable/reference/detectSteps.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/reference/diurnalProfile.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/reference/freeLivingICF.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioWearable/reference/index.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/reference/intensityGradient.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/reference/mxMetrics.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioWearable/reference/paIntensityThresholds.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioWearable/reference/readAccelCSV.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioWearable/reference/summarizeFreeLiving.html</loc></url>
 </urlset>
 

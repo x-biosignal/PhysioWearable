@@ -1,5 +1,24 @@
 # Changelog
 
+## PhysioWearable 0.2.0
+
+Free-living physical-behaviour summary and ICF linking.
+
+- [`summarizeFreeLiving()`](https://x-biosignal.github.io/PhysioWearable/reference/summarizeFreeLiving.md):
+  day-level and person-level free-living metrics on top of the ENMO /
+  intensity primitives – intensity time-use (sedentary/light/MVPA), the
+  Rowlands intensity gradient and MX metrics, activity fragmentation
+  (ASTP/SATP), the diurnal profile, WHO guideline attainment and
+  valid-wear-day handling.
+- [`intensityGradient()`](https://x-biosignal.github.io/PhysioWearable/reference/intensityGradient.md),
+  [`mxMetrics()`](https://x-biosignal.github.io/PhysioWearable/reference/mxMetrics.md),
+  [`activityFragmentation()`](https://x-biosignal.github.io/PhysioWearable/reference/activityFragmentation.md),
+  [`diurnalProfile()`](https://x-biosignal.github.io/PhysioWearable/reference/diurnalProfile.md):
+  the component metrics, exported standalone.
+- [`freeLivingICF()`](https://x-biosignal.github.io/PhysioWearable/reference/freeLivingICF.md):
+  map the metrics to ICF Activities & Participation codes stamped with
+  the performance qualifier (real-world doing vs clinic capacity).
+
 ## PhysioWearable 0.1.1
 
 ### Validation

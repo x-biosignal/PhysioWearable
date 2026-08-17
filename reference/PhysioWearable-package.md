@@ -5,8 +5,12 @@ data, following the GGIR methodology. Computes the
 Euclidean-Norm-Minus-One (ENMO) acceleration metric with epoch
 aggregation, gravity-based auto-calibration (van Hees et al. 2014),
 non-wear detection, step detection, physical-activity intensity
-classification and bout detection, and ingests raw accelerometer exports
-(GENEActiv / ActiGraph / Axivity CSV) into PhysioExperiment objects.
+classification and bout detection, and a free-living physical-behaviour
+summary (intensity gradient and MX metrics, activity fragmentation,
+diurnal profile and guideline attainment) linked to the ICF Activities
+and Participation performance qualifier. Ingests raw accelerometer
+exports (GENEActiv / ActiGraph / Axivity CSV) into PhysioExperiment
+objects.
 
 ## See also
 
