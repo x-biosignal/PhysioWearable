@@ -103,6 +103,13 @@ License](https://x-biosignal.github.io/PhysioWearable/LICENSE).
   : Wrap tri-axial acceleration in a PhysioExperiment
 - [`activityFragmentation()`](https://x-biosignal.github.io/PhysioWearable/reference/activityFragmentation.md)
   : Physical-activity fragmentation
+- [`adlBudget()`](https://x-biosignal.github.io/PhysioWearable/reference/adlBudget.md)
+  : Time budget of recognised activities
+- [`adlFeatures()`](https://x-biosignal.github.io/PhysioWearable/reference/adlFeatures.md)
+  : Windowed accelerometer features for activity recognition
+- [`adlToICF()`](https://x-biosignal.github.io/PhysioWearable/reference/adlToICF.md)
+  : Map recognised ADL activities to ICF Activities & Participation
+  codes
 - [`autoCalibrateAccel()`](https://x-biosignal.github.io/PhysioWearable/reference/autoCalibrateAccel.md)
   : Gravity-based accelerometer auto-calibration
 - [`classifyBouts()`](https://x-biosignal.github.io/PhysioWearable/reference/classifyBouts.md)
@@ -125,6 +132,11 @@ License](https://x-biosignal.github.io/PhysioWearable/LICENSE).
   : Physical-activity intensity ENMO cut-points
 - [`readAccelCSV()`](https://x-biosignal.github.io/PhysioWearable/reference/readAccelCSV.md)
   : Read a raw accelerometer CSV export into a PhysioExperiment
+- [`recognizeADL()`](https://x-biosignal.github.io/PhysioWearable/reference/recognizeADL.md)
+  : Recognise ADL activities in a raw recording
 - [`summarizeFreeLiving()`](https://x-biosignal.github.io/PhysioWearable/reference/summarizeFreeLiving.md)
   : Summarise free-living physical behaviour over one or more days
+- [`trainADL()`](https://x-biosignal.github.io/PhysioWearable/reference/trainADL.md)
+  [`predict(`*`<adl_model>`*`)`](https://x-biosignal.github.io/PhysioWearable/reference/trainADL.md)
+  : Train an ADL activity recogniser from labelled windows
 

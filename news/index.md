@@ -1,5 +1,29 @@
 # Changelog
 
+## PhysioWearable 0.3.0
+
+Sensor-based ADL activity recognition (HAR).
+
+- [`adlFeatures()`](https://x-biosignal.github.io/PhysioWearable/reference/adlFeatures.md):
+  windowed time/frequency features for activity recognition (per-axis
+  and vector-magnitude statistics, signal-magnitude area, inter-axis
+  correlations, dominant frequency, spectral energy/entropy, jerk RMS).
+- [`trainADL()`](https://x-biosignal.github.io/PhysioWearable/reference/trainADL.md)
+  /
+  [`recognizeADL()`](https://x-biosignal.github.io/PhysioWearable/reference/recognizeADL.md):
+  a dependency-free, model-agnostic k-nearest-neighbours activity
+  recogniser (swap in PhysioML ROCKET / a torch model for a stronger
+  engine).
+- [`adlBudget()`](https://x-biosignal.github.io/PhysioWearable/reference/adlBudget.md)
+  /
+  [`adlToICF()`](https://x-biosignal.github.io/PhysioWearable/reference/adlToICF.md):
+  the recognised-activity time budget and its map to ICF Activities &
+  Participation d-codes (walking -\> d450, stairs -\> d455, postures -\>
+  d415, eating -\> d550, housework -\> d640, …) with the performance
+  qualifier – answering “doing WHAT”, complementing
+  [`summarizeFreeLiving()`](https://x-biosignal.github.io/PhysioWearable/reference/summarizeFreeLiving.md)’s
+  “how much / how intense”. Validated on the real UCI HAR dataset.
+
 ## PhysioWearable 0.2.0
 
 Free-living physical-behaviour summary and ICF linking.

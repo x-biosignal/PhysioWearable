@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioWearable</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,6 +50,16 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioWearable/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.3.0" id="physiowearable-030">PhysioWearable 0.3.0<a class="anchor" aria-label="anchor" href="#physiowearable-030"></a></h2>
+<p>Sensor-based ADL activity recognition (HAR).</p>
+<ul><li>
+<code><a href="../reference/adlFeatures.html">adlFeatures()</a></code>: windowed time/frequency features for activity recognition (per-axis and vector-magnitude statistics, signal-magnitude area, inter-axis correlations, dominant frequency, spectral energy/entropy, jerk RMS).</li>
+<li>
+<code><a href="../reference/trainADL.html">trainADL()</a></code> / <code><a href="../reference/recognizeADL.html">recognizeADL()</a></code>: a dependency-free, model-agnostic k-nearest-neighbours activity recogniser (swap in PhysioML ROCKET / a torch model for a stronger engine).</li>
+<li>
+<code><a href="../reference/adlBudget.html">adlBudget()</a></code> / <code><a href="../reference/adlToICF.html">adlToICF()</a></code>: the recognised-activity time budget and its map to ICF Activities &amp; Participation d-codes (walking -&gt; d450, stairs -&gt; d455, postures -&gt; d415, eating -&gt; d550, housework -&gt; d640, …) with the performance qualifier – answering “doing WHAT”, complementing <code><a href="../reference/summarizeFreeLiving.html">summarizeFreeLiving()</a></code>’s “how much / how intense”. Validated on the real UCI HAR dataset.</li>
+</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.2.0" id="physiowearable-020">PhysioWearable 0.2.0<a class="anchor" aria-label="anchor" href="#physiowearable-020"></a></h2>
 <p>Free-living physical-behaviour summary and ICF linking.</p>
