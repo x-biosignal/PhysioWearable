@@ -1,5 +1,17 @@
 # Changelog
 
+## PhysioWearable 0.5.1
+
+- [`summarizeSleepStages()`](https://x-biosignal.github.io/PhysioWearable/reference/summarizeSleepStages.md)
+  generalises
+  [`summarizeAppleSleep()`](https://x-biosignal.github.io/PhysioWearable/reference/summarizeAppleSleep.md)
+  to any vendor’s sleep-stage labels (via
+  `asleep_levels`/`wake_levels`/`stage_cols`), so Fitbit
+  (`wake`/`light`/`deep`/`rem`) and other wearables reuse the same
+  per-night metrics.
+  [`summarizeAppleSleep()`](https://x-biosignal.github.io/PhysioWearable/reference/summarizeAppleSleep.md)
+  is now a thin wrapper (unchanged behaviour).
+
 ## PhysioWearable 0.5.0
 
 Wrist sleep and blood-oxygen analysis (Apple Watch and research

@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioWearable</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.1</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,6 +50,11 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioWearable/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.1" id="physiowearable-051">PhysioWearable 0.5.1<a class="anchor" aria-label="anchor" href="#physiowearable-051"></a></h2>
+<ul><li>
+<code><a href="../reference/summarizeSleepStages.html">summarizeSleepStages()</a></code> generalises <code><a href="../reference/summarizeAppleSleep.html">summarizeAppleSleep()</a></code> to any vendor’s sleep-stage labels (via <code>asleep_levels</code>/<code>wake_levels</code>/<code>stage_cols</code>), so Fitbit (<code>wake</code>/<code>light</code>/<code>deep</code>/<code>rem</code>) and other wearables reuse the same per-night metrics. <code><a href="../reference/summarizeAppleSleep.html">summarizeAppleSleep()</a></code> is now a thin wrapper (unchanged behaviour).</li>
+</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.0" id="physiowearable-050">PhysioWearable 0.5.0<a class="anchor" aria-label="anchor" href="#physiowearable-050"></a></h2>
 <p>Wrist sleep and blood-oxygen analysis (Apple Watch and research actigraphy).</p>

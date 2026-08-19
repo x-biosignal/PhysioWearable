@@ -47,6 +47,8 @@
   : Summarise free-living physical behaviour over one or more days
 - [`summarizeSleep()`](https://x-biosignal.github.io/PhysioWearable/reference/summarizeSleep.md)
   : Summarise a sleep/wake series into standard sleep metrics
+- [`summarizeSleepStages()`](https://x-biosignal.github.io/PhysioWearable/reference/summarizeSleepStages.md)
+  : Summarise staged sleep into per-night clinical metrics
 - [`trainADL()`](https://x-biosignal.github.io/PhysioWearable/reference/trainADL.md)
   [`predict(`*`<adl_model>`*`)`](https://x-biosignal.github.io/PhysioWearable/reference/trainADL.md)
   : Train an ADL activity recogniser from labelled windows
