@@ -1,5 +1,14 @@
 # Changelog
 
+## PhysioWearable 0.5.2
+
+- [`summarizeSleepStages()`](https://x-biosignal.github.io/PhysioWearable/reference/summarizeSleepStages.md)
+  now matches stage labels case-insensitively, so the default
+  `wake_levels = "Awake"` / `inbed_levels = "InBed"` also match a
+  vendor’s lowercase labels (e.g. Health Connect / Fitbit `awake`),
+  which previously left WASO at 0 and inflated sleep efficiency under
+  the documented default call.
+
 ## PhysioWearable 0.5.1
 
 - [`summarizeSleepStages()`](https://x-biosignal.github.io/PhysioWearable/reference/summarizeSleepStages.md)
