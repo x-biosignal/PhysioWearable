@@ -1,0 +1,38 @@
+Package: PhysioWearable
+Title: Free-Living Wearable Accelerometry for the Physio Ecosystem
+Version: 0.5.2
+Authors@R:
+    person(given = "Yusuke",
+           family = "Matsui",
+           role = c("aut", "cre"),
+           email = "mail.to.matsui@gmail.com")
+Description: Free-living physical-activity analysis of raw tri-axial
+    accelerometer data, following the GGIR methodology. Computes the
+    Euclidean-Norm-Minus-One (ENMO) acceleration metric with epoch aggregation,
+    gravity-based auto-calibration (van Hees et al. 2014), non-wear detection,
+    step detection, physical-activity intensity classification and bout
+    detection, and a free-living physical-behaviour summary (intensity gradient
+    and MX metrics, activity fragmentation, diurnal profile and guideline
+    attainment) linked to the ICF Activities and Participation performance
+    qualifier. Ingests raw accelerometer exports (GENEActiv / ActiGraph /
+    Axivity CSV) into PhysioExperiment objects.
+Depends:
+    R (>= 4.2)
+Imports:
+    stats,
+    utils
+Suggests:
+    PhysioCore,
+    PhysioAnnotationHub,
+    S4Vectors,
+    SummarizedExperiment,
+    testthat (>= 3.2.0),
+    GGIR,
+    GGIRread
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
+URL: https://github.com/x-biosignal/PhysioWearable, https://x-biosignal.r-universe.dev/PhysioWearable, https://x-biosignal.github.io/PhysioWearable/
+BugReports: https://github.com/x-biosignal/PhysioWearable/issues
