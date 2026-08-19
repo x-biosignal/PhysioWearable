@@ -17,6 +17,8 @@
   : Gravity-based accelerometer auto-calibration
 - [`classifyBouts()`](https://x-biosignal.github.io/PhysioWearable/reference/classifyBouts.md)
   : Classify physical-activity intensity and detect activity bouts
+- [`coleKripke()`](https://x-biosignal.github.io/PhysioWearable/reference/coleKripke.md)
+  : Cole-Kripke actigraphy sleep/wake scoring
 - [`computeENMO()`](https://x-biosignal.github.io/PhysioWearable/reference/computeENMO.md)
   : Euclidean Norm Minus One (ENMO) acceleration metric
 - [`detectNonWear()`](https://x-biosignal.github.io/PhysioWearable/reference/detectNonWear.md)
@@ -37,8 +39,14 @@
   : Read a raw accelerometer CSV export into a PhysioExperiment
 - [`recognizeADL()`](https://x-biosignal.github.io/PhysioWearable/reference/recognizeADL.md)
   : Recognise ADL activities in a raw recording
+- [`spo2Metrics()`](https://x-biosignal.github.io/PhysioWearable/reference/spo2Metrics.md)
+  : Oximetry (SpO2) metrics
+- [`summarizeAppleSleep()`](https://x-biosignal.github.io/PhysioWearable/reference/summarizeAppleSleep.md)
+  : Summarise Apple Watch sleep stages into clinical metrics
 - [`summarizeFreeLiving()`](https://x-biosignal.github.io/PhysioWearable/reference/summarizeFreeLiving.md)
   : Summarise free-living physical behaviour over one or more days
+- [`summarizeSleep()`](https://x-biosignal.github.io/PhysioWearable/reference/summarizeSleep.md)
+  : Summarise a sleep/wake series into standard sleep metrics
 - [`trainADL()`](https://x-biosignal.github.io/PhysioWearable/reference/trainADL.md)
   [`predict(`*`<adl_model>`*`)`](https://x-biosignal.github.io/PhysioWearable/reference/trainADL.md)
   : Train an ADL activity recogniser from labelled windows

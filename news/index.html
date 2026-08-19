@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioWearable</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,6 +50,16 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioWearable/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.0" id="physiowearable-050">PhysioWearable 0.5.0<a class="anchor" aria-label="anchor" href="#physiowearable-050"></a></h2>
+<p>Wrist sleep and blood-oxygen analysis (Apple Watch and research actigraphy).</p>
+<ul><li>
+<code><a href="../reference/summarizeAppleSleep.html">summarizeAppleSleep()</a></code> turns the Apple Watch sleep STAGES (from an Apple Health export) into per-night clinical metrics: time in bed, total sleep time, sleep efficiency, WASO, onset latency, awakenings, and Core/Deep/REM minutes; nights are split on a configurable gap.</li>
+<li>
+<code><a href="../reference/coleKripke.html">coleKripke()</a></code> scores sleep/wake from per-minute activity counts (Cole-Kripke 1992, with Webster rescoring), and <code><a href="../reference/summarizeSleep.html">summarizeSleep()</a></code> reduces a sleep/wake series to the standard metrics.</li>
+<li>
+<code><a href="../reference/spo2Metrics.html">spo2Metrics()</a></code> computes the oximetry indices from an SpO2 series – mean, nadir, time below 90% (T90/CT90) and an oxygen desaturation index (ODI) – auto-scaling a 0-1 fraction to percent and using timestamps when supplied.</li>
+</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.4.1" id="physiowearable-041">PhysioWearable 0.4.1<a class="anchor" aria-label="anchor" href="#physiowearable-041"></a></h2>
 <ul><li>

@@ -1,5 +1,26 @@
 # Changelog
 
+## PhysioWearable 0.5.0
+
+Wrist sleep and blood-oxygen analysis (Apple Watch and research
+actigraphy).
+
+- [`summarizeAppleSleep()`](https://x-biosignal.github.io/PhysioWearable/reference/summarizeAppleSleep.md)
+  turns the Apple Watch sleep STAGES (from an Apple Health export) into
+  per-night clinical metrics: time in bed, total sleep time, sleep
+  efficiency, WASO, onset latency, awakenings, and Core/Deep/REM
+  minutes; nights are split on a configurable gap.
+- [`coleKripke()`](https://x-biosignal.github.io/PhysioWearable/reference/coleKripke.md)
+  scores sleep/wake from per-minute activity counts (Cole-Kripke 1992,
+  with Webster rescoring), and
+  [`summarizeSleep()`](https://x-biosignal.github.io/PhysioWearable/reference/summarizeSleep.md)
+  reduces a sleep/wake series to the standard metrics.
+- [`spo2Metrics()`](https://x-biosignal.github.io/PhysioWearable/reference/spo2Metrics.md)
+  computes the oximetry indices from an SpO2 series – mean, nadir, time
+  below 90% (T90/CT90) and an oxygen desaturation index (ODI) –
+  auto-scaling a 0-1 fraction to percent and using timestamps when
+  supplied.
+
 ## PhysioWearable 0.4.1
 
 - [`adlToICF()`](https://x-biosignal.github.io/PhysioWearable/reference/adlToICF.md)
