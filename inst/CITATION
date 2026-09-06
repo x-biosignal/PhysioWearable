@@ -1,0 +1,19 @@
+citHeader("To cite PhysioWearable and the GGIR methodology it implements:")
+
+bibentry(bibtype = "Manual",
+  title = "PhysioWearable: Free-Living Wearable Accelerometry for the Physio Ecosystem",
+  author = person("Yusuke", "Matsui"), year = "2026",
+  note = "R package version 0.1.0",
+  url = "https://github.com/x-biosignal/PhysioWearable")
+
+bibentry(bibtype = "Article",
+  title = "Estimation of Daily Energy Expenditure in Pregnant and Non-Pregnant Women Using a Wrist-Worn Tri-Axial Accelerometer",
+  author = c(person("Vincent T.", "van Hees")), journal = "PLoS ONE",
+  year = "2013", volume = "8", number = "4", pages = "e61691",
+  doi = "10.1371/journal.pone.0061691")
+
+bibentry(bibtype = "Article",
+  title = "Autocalibration of accelerometer data for free-living physical activity assessment using local gravity and temperature",
+  author = c(person("Vincent T.", "van Hees")), journal = "Journal of Applied Physiology",
+  year = "2014", volume = "117", number = "7", pages = "738-744",
+  doi = "10.1152/japplphysiol.00421.2014")
