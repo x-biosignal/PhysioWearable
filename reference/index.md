@@ -21,6 +21,8 @@
   : Cole-Kripke actigraphy sleep/wake scoring
 - [`computeENMO()`](https://x-biosignal.github.io/PhysioWearable/reference/computeENMO.md)
   : Euclidean Norm Minus One (ENMO) acceleration metric
+- [`computeMAD()`](https://x-biosignal.github.io/PhysioWearable/reference/computeMAD.md)
+  : Mean Amplitude Deviation (MAD) acceleration metric
 - [`detectNonWear()`](https://x-biosignal.github.io/PhysioWearable/reference/detectNonWear.md)
   : Detect non-wear periods
 - [`detectSteps()`](https://x-biosignal.github.io/PhysioWearable/reference/detectSteps.md)

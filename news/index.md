@@ -1,5 +1,23 @@
 # Changelog
 
+## PhysioWearable 0.5.3
+
+### New features
+
+- [`computeMAD()`](https://x-biosignal.github.io/PhysioWearable/reference/computeMAD.md)
+  — mean amplitude deviation (Vähä-Ypyä et al. 2015), the gravity-robust
+  movement-intensity metric complementary to
+  [`computeENMO()`](https://x-biosignal.github.io/PhysioWearable/reference/computeENMO.md):
+  per epoch, the mean absolute deviation of the acceleration vector
+  magnitude `r = sqrt(x^2+y^2+z^2)` about its epoch mean,
+  `MAD = mean(|r - mean(r)|)`. MAD captures the *variation* of the
+  magnitude within an epoch (insensitive to a static orientation
+  offset), whereas ENMO captures its *elevation* above 1 g. Validated
+  against
+  [`GGIR::g.applymetrics`](https://wadpac.github.io/GGIR/reference/g.applymetrics.html)
+  MAD to machine precision (max \|diff\| ~5e-14 g, correlation 1.0) on
+  the real PAMAP2 hand-accelerometer signal (749 epochs).
+
 ## PhysioWearable 0.5.2
 
 - [`summarizeSleepStages()`](https://x-biosignal.github.io/PhysioWearable/reference/summarizeSleepStages.md)
