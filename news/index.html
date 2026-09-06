@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioWearable</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.3</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.4</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,6 +50,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioWearable/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.4" id="physiowearable-054">PhysioWearable 0.5.4<a class="anchor" aria-label="anchor" href="#physiowearable-054"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-4">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-4"></a></h3>
+<ul><li>
+<code><a href="../reference/computeENMOa.html">computeENMOa()</a></code> — ENMO-abs (van Hees et al. 2013), <code>|r - 1|</code> with <code>r = sqrt(x^2+y^2+z^2)</code>, the always-positive companion of <code><a href="../reference/computeENMO.html">computeENMO()</a></code> (which truncates negatives to zero). ENMOa retains the sub-1 g dips (deceleration / partial free-fall / a persistent calibration offset) that ENMO discards, so <code>ENMOa &gt;= ENMO</code> always. Completes the ENMO+MAD+ENMOa accelerometer movement triad. Validated against <code><a href="https://wadpac.github.io/GGIR/reference/g.applymetrics.html" class="external-link">GGIR::g.applymetrics</a></code> ENMOa to machine precision (max |diff| ~2e-14 g, correlation 1.0) on the real PAMAP2 hand-accelerometer signal (749 epochs).</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.3" id="physiowearable-053">PhysioWearable 0.5.3<a class="anchor" aria-label="anchor" href="#physiowearable-053"></a></h2>
 <div class="section level3">

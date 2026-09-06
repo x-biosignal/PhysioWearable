@@ -1,5 +1,21 @@
 # Changelog
 
+## PhysioWearable 0.5.4
+
+### New features
+
+- [`computeENMOa()`](https://x-biosignal.github.io/PhysioWearable/reference/computeENMOa.md)
+  — ENMO-abs (van Hees et al. 2013), `|r - 1|` with
+  `r = sqrt(x^2+y^2+z^2)`, the always-positive companion of
+  [`computeENMO()`](https://x-biosignal.github.io/PhysioWearable/reference/computeENMO.md)
+  (which truncates negatives to zero). ENMOa retains the sub-1 g dips
+  (deceleration / partial free-fall / a persistent calibration offset)
+  that ENMO discards, so `ENMOa >= ENMO` always. Completes the
+  ENMO+MAD+ENMOa accelerometer movement triad. Validated against
+  [`GGIR::g.applymetrics`](https://wadpac.github.io/GGIR/reference/g.applymetrics.html)
+  ENMOa to machine precision (max \|diff\| ~2e-14 g, correlation 1.0) on
+  the real PAMAP2 hand-accelerometer signal (749 epochs).
+
 ## PhysioWearable 0.5.3
 
 ### New features
