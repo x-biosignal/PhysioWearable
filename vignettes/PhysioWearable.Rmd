@@ -1,0 +1,94 @@
+---
+title: "Free-living accelerometry with PhysioWearable"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Free-living accelerometry with PhysioWearable}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+PhysioWearable analyses raw tri-axial accelerometry following the GGIR
+methodology. Its analysis layer is **device-agnostic**: once a recording is a
+matrix of acceleration in *g* units, the same functions apply whether the data
+came from a GENEActiv, ActiGraph or Axivity device, or from a consumer wearable
+export. This vignette uses only synthetic data, so it runs offline and is fully
+reproducible --- no device file or API is required.
+
+```{r setup}
+library(PhysioWearable)
+set.seed(1)
+```
+
+## From raw acceleration to ENMO
+
+The core metric is ENMO --- the Euclidean norm of the acceleration vector minus
+one gravity, with negatives truncated to zero. A perfectly still sensor (1 *g*)
+gives ENMO 0; movement raises it. Here is a two-minute synthetic snippet at
+30 Hz: one minute still, then one minute of 1.8 Hz "walking".
+
+```{r raw}
+fs  <- 30
+t1  <- seq_len(60 * fs) / fs
+n1  <- length(t1)
+still <- cbind(x = rnorm(n1, 0, 0.01), y = rnorm(n1, 0, 0.01),
+               z = 1 + rnorm(n1, 0, 0.01))         # ~1 g on z, sensor still
+walk  <- cbind(x = 0.3 * sin(2 * pi * 1.8 * t1), y = 0,
+               z = 1 + 0.3 * cos(2 * pi * 1.8 * t1))  # 1.8 Hz movement
+accel <- rbind(still, walk)
+
+enmo_epoch <- computeENMO(accel, sampling_rate = fs, epoch_sec = 5, unit = "mg")
+round(enmo_epoch)            # ~0 mg while still, higher during "walking"
+```
+
+## Step detection and intensity
+
+`detectSteps()` peak-counts the dynamic acceleration; `classifyBouts()` turns
+per-epoch ENMO into intensity categories using published mg cut-points.
+
+```{r steps}
+detectSteps(accel, sampling_rate = fs)$n_steps
+
+paIntensityThresholds()                 # light / moderate / vigorous, mg
+bouts <- classifyBouts(enmo_epoch, epoch_sec = 5, enmo_unit = "mg",
+                       min_bout_min = 0)
+bouts$minutes
+```
+
+## A day-level free-living summary
+
+Day- and person-level metrics are built on per-epoch ENMO. Below is a synthetic
+14-hour day in 30-second epochs (mostly sedentary with a one-hour brisk block);
+`summarizeFreeLiving()` returns the metrics free-living studies report ---
+intensity time-use, the Rowlands intensity gradient, MX metrics, activity
+fragmentation and WHO guideline attainment.
+
+```{r day}
+ep  <- 30
+day <- c(rep(5,   120 * 10),   # 10 h mostly sedentary (5 mg)
+         rep(60,  120 * 2),    # 2 h light (60 mg)
+         rep(160, 120 * 1),    # 1 h brisk / moderate (160 mg)
+         rep(5,   120 * 1))    # 1 h sedentary
+summary <- summarizeFreeLiving(day, epoch_sec = ep, enmo_unit = "mg")
+summary$aggregate[c("sedentary_min", "light_min", "mvpa_min",
+                    "intensity_gradient")]
+summary$aggregate$meets_guideline
+```
+
+`intensityGradient()` and `mxMetrics()` are also available on their own:
+
+```{r metrics}
+round(intensityGradient(day, epoch_sec = ep)$gradient, 2)
+mxMetrics(day, epoch_sec = ep, minutes = c(30, 60))
+```
+
+## Where next
+
+The free-living metrics link to the ICF Activities and Participation performance
+qualifier via `freeLivingICF()` and `adlToICF()`. Raw device exports are read
+with `readAccelCSV()` into a PhysioExperiment object; the recording can be
+gravity-calibrated with `autoCalibrateAccel()` and screened for non-wear with
+`detectNonWear()` before the analysis above.
