@@ -1,5 +1,12 @@
 # Changelog
 
+## PhysioWearable 0.5.5
+
+### Documentation
+
+- A vignette carries one task end to end on synthetic or bundled data,
+  offline, and is built and run by `R CMD check`.
+
 ## PhysioWearable 0.5.4
 
 ### New features

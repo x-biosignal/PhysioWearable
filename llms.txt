@@ -158,3 +158,9 @@ License](https://x-biosignal.github.io/PhysioWearable/LICENSE).
 - [`upperLimbUse()`](https://x-biosignal.github.io/PhysioWearable/reference/upperLimbUse.md)
   : Real-world upper-limb use from bilateral wrist accelerometry
 
+# Articles
+
+### All vignettes
+
+- [Free-living accelerometry with
+  PhysioWearable](https://x-biosignal.github.io/PhysioWearable/articles/PhysioWearable.md):
